@@ -133,7 +133,7 @@ h3 {
     margin-top: 10px;
     color: #2a2a2a;
     font-family: 'Montserrat', sans-serif;
-    font-size: 1.2em;
+    font-size: 1em;
     text-align: center;
     line-height: 2;
     overflow: auto;
@@ -300,17 +300,18 @@ iframe {
 }
 
 @media screen and (min-width: 1600px) {
-  .headertext {
-     font-size: 40px;
-     padding: 5px 0px 5px 0px;
-  }
+    .headertext {
+        font-size: 40px;
+        padding: 5px 0px 5px 0px;
+    }
+    .footer {
+        justify-content:space-evenly;
+    }
+    .flex-item {
+        font-size: 1.2em;
+    }
 }
-.footer {
-    justify-content:space-evenly;
-}
-.flex-item {
-    font-size: 0.7em;
-}
+
 
 
   /* SCROLL: */
