@@ -16,15 +16,11 @@ body {
 }
 
 .noselect {
-    -webkit-touch-callout: none; /* iOS Safari */
     -webkit-user-select: none; /* Safari */
-    -khtml-user-select: none; /* Konqueror HTML */
-    -moz-user-select: none; /* Old versions of Firefox */
+    -moz-user-select: none; /* Firefox */
     -ms-user-select: none; /* Internet Explorer/Edge */
-    user-select: none; /* Non-prefixed version, currently
-                                    supported by Chrome, Edge, Opera and Firefox */
+    user-select: none; /* Standard syntax */
   }
-
 .header {
     padding-left: 50px;
     padding-right: 50px;
@@ -55,7 +51,7 @@ h1 {
     justify-content: space-around;
     align-items: center;
     flex-basis: 30%;
-    padding: 30px;
+    /* padding: 30px; */
 }
 .btn {
     background: linear-gradient(171.8deg, rgb(5, 111, 146) 13.5%, rgb(6, 57, 84) 78.6%);
@@ -94,7 +90,7 @@ h1 {
     background: linear-gradient(171.8deg, rgb(5, 111, 146) 13.5%, rgb(6, 57, 84) 78.6%);
     font-family: 'Montserrat', sans-serif;
     color:#e0e0e0;
-    border-radius: 2px;
+    border-radius: 5px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -188,29 +184,13 @@ p {
     cursor: pointer; 
     width: 70px;
 }
-/* .lokacija {
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-}
-.lokacija p, .lokacija h4 {
-    margin-bottom: 0px;
-}
-.kontakt {
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-}
-.kontakt p, .kontakt h4 {
-    margin-bottom: 0px;
-} */
-.mapa { 
+.map { 
     overflow:hidden;
     padding-bottom:56.25%;
     position:relative;
     height:0;
 } 
-.mapa iframe{
+.map iframe{
     left:0;
     top:0;
     height:100%;
@@ -222,7 +202,29 @@ iframe {
     width: 500px;
     border-radius: 15px;
   }
+/* slide-up animation */
+@keyframes slideUp {
+    from {
+        opacity: 0;
+        transform: translateY(100%);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
 
+#flex1 .flex {
+    opacity: 0; 
+    animation: slideUp 1s ease forwards;
+    animation-delay: var(--animation-delay); 
+}
+
+#flex1 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
 @media only screen and (max-width: 800px) {     
     
     .flex-container {
@@ -387,24 +389,5 @@ iframe {
         font-size: 1.2em;
     }
 }
-
-
-
-  /* SCROLL: */
-/* 
-::-webkit-scrollbar {
-    width: px;
-} 
-::-webkit-scrollbar-track {
-    background: #f1f1f1;
-}
-::-webkit-scrollbar-thumb {
-    background: #787878;
-}
-::-webkit-scrollbar-thumb:hover {
-    background: #2a2a2a;
-}
-   */
-
 
 
