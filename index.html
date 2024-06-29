@@ -22,11 +22,11 @@
         <h2>PETAR HORVAT</h2>
       </div>
       <div class="button noselect">
-        <a href="#lokacija" title="location"
+        <div onclick="scrollToSection('lokacija')" title="location"
           ><button class="btn" title="location">
             <i class="fa-solid fa-location-dot"></i></button
-        ></a>
-        <a href="#kontakt" title="phone"
+        ></div>
+        <a href="tel:123-456-7890" title="phone"
           ><button class="btn" title="phone">
             <i class="fa-solid fa-phone"></i></button
         ></a>
@@ -38,45 +38,45 @@
     </div>
     <div id="flex1" class="flex-container noselect">
       <div class="flex">
-        <a href="#1">
+        <div onclick="scrollToSection('flex-item1')">
           <img src="./icons/2710035.png" alt="icon1" class="image" />
           <h3>KAZNENO I PREKRŠAJNO PRAVO</h3>
-        </a>
+        </div>
       </div>
       <div class="flex">
-        <a href="#2">
+        <div onclick="scrollToSection('flex-item2')">
           <img src="./icons/icons8-lawsuit-50.png" alt="icon2" class="image" />
           <h3>OBITELJSKO PRAVO</h3>
-        </a>
+        </div>
       </div>
       <div class="flex">
-        <a href="#3">
+        <div onclick="scrollToSection('flex-item3')">
           <img src="./icons/125468.png" alt="icon3" class="image" />
           <h3>ZEMLJIŠNOKNJIŽNO PRAVO</h3>
-        </a>
+        </div>
       </div>
       <div class="flex">
-        <a href="#4">
+        <div onclick="scrollToSection('flex-item4')">
           <img src="./icons/783196.png" alt="icon1" class="image" />
           <h3>OBVEZNO PRAVO</h3>
-        </a>
+        </div>
       </div>
       <div class="flex">
-        <a href="#5">
+        <div onclick="scrollToSection('flex-item5')">
           <img src="./icons/2710070.png" alt="icon2" class="image" />
           <h3>STVARNO PRAVO</h3>
-        </a>
+        </div>
       </div>
       <div class="flex">
-        <a href="#6">
+        <div onclick="scrollToSection('flex-item6')">
           <img src="./icons/4252490.png" alt="icon3" class="image" />
           <h3>NASLJEDNO PRAVO</h3>
-        </a>
+        </div>
       </div>
     </div>
     <div id="flex2" class="flex-container noselect">
       <div class="flex-item">
-        <span class="anchor" id="1"></span>
+        <span  id="flex-item1"></span>
         <header class="flex-header">KAZNENO I PREKRŠAJNO PRAVO</header>
         <p>&#x2022; Obrana okrivljenika u kaznenom i prekršajnom postupku</p>
         <p>
@@ -85,7 +85,7 @@
         </p>
       </div>
       <div class="flex-item">
-        <span class="anchor" id="2"></span>
+        <span  id="flex-item2"></span>
         <header class="flex-header">OBITELJSKO PRAVO</header>
         <p>
           &#x2022; Zastupanje stranaka u bračnim sporovima (razvod, poništaj i
@@ -102,7 +102,7 @@
         </p>
       </div>
       <div class="flex-item">
-        <span class="anchor" id="3"></span>
+        <span  id="flex-item3"></span>
         <header class="flex-header">ZEMLJIŠNOKNJIŽNO PRAVO</header>
         <p>
           &#x2022; Uknjižbe i predbilježbe prava vlasništva i drugih stvarnih
@@ -114,7 +114,7 @@
         </p>
       </div>
       <div class="flex-item">
-        <span class="anchor" id="4"></span>
+        <span  id="flex-item4"></span>
         <header class="flex-header">OBVEZNO PRAVO</header>
         <p>
           &#x2022; Sastavljanje ugovora, jednostranih izjava volje i drugih
@@ -126,7 +126,7 @@
         </p>
       </div>
       <div class="flex-item">
-        <span class="anchor" id="5"></span>
+        <span  id="flex-item5"></span>
         <header class="flex-header">STVARNO PRAVO</header>
         <p>
           &#x2022; Sastavljanje ugovora, jednostranih izjava volje i drugih
@@ -138,7 +138,7 @@
         </p>
       </div>
       <div class="flex-item">
-        <span class="anchor" id="6"></span>
+        <span  id="flex-item6"></span>
         <header class="flex-header">NASLJEDNO PRAVO</header>
         <p>
           &#x2022; Sastavljanje ugovora, jednostranih izjava volje i drugih
